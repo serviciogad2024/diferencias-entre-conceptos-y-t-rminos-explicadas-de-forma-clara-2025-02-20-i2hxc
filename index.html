@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferencias Entre Conceptos y Términos</title>
+    <meta name="description" content="Encuentra diferencias entre términos de forma sencilla y clara">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-white">
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50" x-data="{ isOpen: false }">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="text-2xl font-bold text-blue-600">DiferenciasEntre</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#caracteristicas" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Características</a>
+                    <a href="#beneficios" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Beneficios</a>
+                    <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">FAQ</a>
+                    <a href="#contacto" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contacto</a>
+                </div>
+                <button @click="isOpen = !isOpen" class="md:hidden focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path x-show="!isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path x-show="isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            <div x-show="isOpen" class="md:hidden mt-4 space-y-4">
+                <a href="#caracteristicas" class="block text-gray-600 hover:text-blue-600">Características</a>
+                <a href="#beneficios" class="block text-gray-600 hover:text-blue-600">Beneficios</a>
+                <a href="#faq" class="block text-gray-600 hover:text-blue-600">FAQ</a>
+                <a href="#contacto" class="block text-gray-600 hover:text-blue-600">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pt-32 pb-24 bg-gradient-to-br from-blue-50 to-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900 mb-8">
+                        Diferencias Entre Conceptos y Términos Explicadas de Forma Clara
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-600 mb-12">
+                        Encuentra diferencias entre términos de forma sencilla
+                    </p>
+                    <a href="https://diferenciasentre.net/" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                        Comenzar Ahora
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="caracteristicas" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Características Principales</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Comparaciones Claras</h3>
+                        <p class="text-gray-600">Explicaciones detalladas y fáciles de entender para cada comparación.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Contenido Optimizado</h3>
+                        <p class="text-gray-600">Información precisa y relevante para cada búsqueda.</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Navegación Fácil</h3>
+                        <p class="text-gray-600">Interfaz intuitiva para encontrar lo que buscas rápidamente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="beneficios" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Beneficios</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Resolución Rápida</h3>
+                        <p class="text-gray-600">Encuentra las respuestas que necesitas en cuestión de segundos.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Explicaciones Claras</h3>
+                        <p class="text-gray-600">Contenido fácil de entender y aplicar en tu día a día.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Aprendizaje Fácil</h3>
+                        <p class="text-gray-600">Mejora tu comprensión de conceptos de manera efectiva.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Preguntas Frecuentes</h2>
+                <div class="max-w-3xl mx-auto space-y-6" x-data="{selected:null}">
+                    <div class="border border-gray-200 rounded-lg">
+                        <button @click="selected !== 1 ? selected = 1 : selected = null" class="w-full p-6 text-left focus:outline-none">
+                            <div class="flex items-center justify-between">
+                                <span class="text-lg font-semibold">¿Cómo funciona el servicio?</span>
+                                <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path x-show="selected !== 1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    <path x-show="selected === 1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div x-show="selected === 1" class="px-6 pb-6">
+                            <p class="text-gray-600">Simplemente busca los términos que deseas comparar y encontrarás explicaciones detalladas sobre sus diferencias.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-blue-600 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">¿Listo para empezar?</h2>
+                <a href="https://diferenciasentre.net/" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                    Explorar Ahora
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">DiferenciasEntre</h3>
+                    <p class="text-gray-400">Claridad en cada comparación.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Enlaces</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Inicio</a></li>
+                        <li><a href="#caracteristicas" class="hover:text-white transition-colors duration-300">Características</a></li>
+                        <li><a href="#beneficios" class="hover:text-white transition-colors duration-300">Beneficios</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Política de Privacidad</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Términos de Uso</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+                    <p class="text-gray-400">contacto@diferenciasentre.net</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 DiferenciasEntre. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
