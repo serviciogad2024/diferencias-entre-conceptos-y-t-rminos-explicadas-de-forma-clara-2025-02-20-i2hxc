@@ -1,141 +1,299 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diferencias Entre Conceptos y Términos</title>
     <meta name="description" content="Encuentra diferencias entre términos de forma sencilla y clara">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="font-sans antialiased text-gray-800 bg-white">
-    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50" x-data="{ isOpen: false }">
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold text-blue-600">DiferenciasEntre</a>
+                <a href="https://serviciogad2024.github.io/diferencias-entre-conceptos-y-t-rminos-explicadas-de-forma-clara-2025-02-20-i2hxc" class="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors duration-300">DiferenciasEntre</a>
+                
+                <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8">
                     <a href="#caracteristicas" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Características</a>
                     <a href="#beneficios" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Beneficios</a>
+                    <a href="#testimonios" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Testimonios</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Nosotros</a>
                     <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">FAQ</a>
-                    <a href="#contacto" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contacto</a>
                 </div>
-                <button @click="isOpen = !isOpen" class="md:hidden focus:outline-none">
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path x-show="!isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                        <path x-show="isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                    </svg>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-button md:hidden focus:outline-none" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
-            <div x-show="isOpen" class="md:hidden mt-4 space-y-4">
-                <a href="#caracteristicas" class="block text-gray-600 hover:text-blue-600">Características</a>
-                <a href="#beneficios" class="block text-gray-600 hover:text-blue-600">Beneficios</a>
-                <a href="#faq" class="block text-gray-600 hover:text-blue-600">FAQ</a>
-                <a href="#contacto" class="block text-gray-600 hover:text-blue-600">Contacto</a>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden mt-4 space-y-4">
+                <a href="#caracteristicas" class="block text-gray-600 hover:text-blue-600 py-2">Características</a>
+                <a href="#beneficios" class="block text-gray-600 hover:text-blue-600 py-2">Beneficios</a>
+                <a href="#testimonios" class="block text-gray-600 hover:text-blue-600 py-2">Testimonios</a>
+                <a href="#about" class="block text-gray-600 hover:text-blue-600 py-2">Nosotros</a>
+                <a href="#faq" class="block text-gray-600 hover:text-blue-600 py-2">FAQ</a>
             </div>
         </nav>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="pt-32 pb-24 bg-gradient-to-br from-blue-50 to-white">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900 mb-8">
-                        Diferencias Entre Conceptos y Términos Explicadas de Forma Clara
+                        Descubre las Diferencias Entre Conceptos de Manera Clara y Precisa
                     </h1>
                     <p class="text-xl md:text-2xl text-gray-600 mb-12">
-                        Encuentra diferencias entre términos de forma sencilla
+                        La plataforma definitiva para entender las sutiles diferencias entre términos similares. Optimiza tu comprensión y mejora tu comunicación.
                     </p>
                     <a href="https://diferenciasentre.net/" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-                        Comenzar Ahora
+                        Explorar Diferencias Ahora
                     </a>
                 </div>
             </div>
         </section>
 
+        <!-- Features Section -->
         <section id="caracteristicas" class="py-24 bg-white">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Características Principales</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-102">
                         <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Comparaciones Claras</h3>
-                        <p class="text-gray-600">Explicaciones detalladas y fáciles de entender para cada comparación.</p>
+                        <h3 class="text-xl font-semibold mb-4">Análisis Detallado</h3>
+                        <p class="text-gray-600">Explicaciones exhaustivas con ejemplos prácticos y casos de uso real. Comprende las diferencias más sutiles entre términos similares.</p>
                     </div>
                     
-                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-102">
                         <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Contenido Optimizado</h3>
-                        <p class="text-gray-600">Información precisa y relevante para cada búsqueda.</p>
+                        <h3 class="text-xl font-semibold mb-4">Búsqueda Inteligente</h3>
+                        <p class="text-gray-600">Sistema de búsqueda avanzado que entiende el contexto y sugiere términos relacionados. Encuentra exactamente lo que necesitas.</p>
                     </div>
 
-                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-102">
                         <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Navegación Fácil</h3>
-                        <p class="text-gray-600">Interfaz intuitiva para encontrar lo que buscas rápidamente.</p>
+                        <h3 class="text-xl font-semibold mb-4">Contenido Actualizado</h3>
+                        <p class="text-gray-600">Base de datos en constante actualización con las últimas definiciones y usos contemporáneos de términos y conceptos.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Benefits Section -->
         <section id="beneficios" class="py-24 bg-gray-50">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Beneficios</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Beneficios Exclusivos</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <h3 class="text-xl font-semibold mb-4">Resolución Rápida</h3>
-                        <p class="text-gray-600">Encuentra las respuestas que necesitas en cuestión de segundos.</p>
+                    <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <h3 class="text-xl font-semibold mb-4">Ahorro de Tiempo</h3>
+                        <p class="text-gray-600">Reduce hasta un 70% el tiempo de investigación con nuestras comparaciones precisas y bien estructuradas.</p>
                     </div>
-                    <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <h3 class="text-xl font-semibold mb-4">Explicaciones Claras</h3>
-                        <p class="text-gray-600">Contenido fácil de entender y aplicar en tu día a día.</p>
+                    <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <h3 class="text-xl font-semibold mb-4">Precisión Garantizada</h3>
+                        <p class="text-gray-600">Contenido verificado por expertos en lingüística y especialistas en cada campo temático.</p>
                     </div>
-                    <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <h3 class="text-xl font-semibold mb-4">Aprendizaje Fácil</h3>
-                        <p class="text-gray-600">Mejora tu comprensión de conceptos de manera efectiva.</p>
+                    <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <h3 class="text-xl font-semibold mb-4">Mejora Continua</h3>
+                        <p class="text-gray-600">Aumenta tu vocabulario y comprensión con cada búsqueda. Perfecto para estudiantes y profesionales.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="faq" class="py-24 bg-white">
+        <!-- About Us Section -->
+        <section id="about" class="py-24 bg-white">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Preguntas Frecuentes</h2>
-                <div class="max-w-3xl mx-auto space-y-6" x-data="{selected:null}">
-                    <div class="border border-gray-200 rounded-lg">
-                        <button @click="selected !== 1 ? selected = 1 : selected = null" class="w-full p-6 text-left focus:outline-none">
-                            <div class="flex items-center justify-between">
-                                <span class="text-lg font-semibold">¿Cómo funciona el servicio?</span>
-                                <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path x-show="selected !== 1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                                    <path x-show="selected === 1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/>
-                                </svg>
-                            </div>
-                        </button>
-                        <div x-show="selected === 1" class="px-6 pb-6">
-                            <p class="text-gray-600">Simplemente busca los términos que deseas comparar y encontrarás explicaciones detalladas sobre sus diferencias.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Sobre Nosotros</h2>
+                <div class="max-w-3xl mx-auto space-y-8">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Fundada en 2020, DiferenciasEntre nació de la pasión por la claridad conceptual y la precisión lingüística. Un grupo de lingüistas y expertos en comunicación se unió para crear una plataforma que ayudara a las personas a comprender mejor las sutilezas del lenguaje y los conceptos.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Nuestra misión es democratizar el conocimiento y hacer que la comprensión de términos y conceptos sea accesible para todos. Nos guían valores fundamentales como la precisión, la claridad, la accesibilidad y el compromiso con la educación continua.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonios" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Lo Que Dicen Nuestros Usuarios</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"La herramienta perfecta para mi trabajo como redactora. Me ayuda a elegir las palabras precisas y entender las diferencias sutiles entre términos similares."</p>
+                        <div class="border-t pt-4">
+                            <p class="font-semibold">María Rodríguez</p>
+                            <p class="text-sm text-gray-500">Redactora Senior, Editorial Moderna</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Uso DiferenciasEntre diariamente en mis clases. Los estudiantes comprenden mejor los conceptos gracias a las explicaciones claras y los ejemplos prácticos."</p>
+                        <div class="border-t pt-4">
+                            <p class="font-semibold">Carlos Méndez</p>
+                            <p class="text-sm text-gray-500">Profesor Universitario</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Increíble herramienta para mejorar mi español. Como estudiante internacional, me ayuda a entender los matices del idioma."</p>
+                        <div class="border-t pt-4">
+                            <p class="font-semibold">Sophie Laurent</p>
+                            <p class="text-sm text-gray-500">Estudiante de Intercambio</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"La mejor inversión para nuestro departamento de contenido. Ha mejorado significativamente la precisión de nuestras publicaciones."</p>
+                        <div class="border-t pt-4">
+                            <p class="font-semibold">Ana García</p>
+                            <p class="text-sm text-gray-500">Directora de Contenido, TechNews</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-24 bg-blue-600 text-white">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8">¿Listo para empezar?</h2>
+        <!-- FAQ Section -->
+        <section id="faq" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Preguntas Frecuentes</h2>
+                <div class="max-w-3xl mx-auto space-y-6" x-data="{selected:null}">
+                    <div class="border border-gray-200 rounded-lg hover:shadow-md transition-shadow duration-300">
+                        <button @click="selected !== 1 ? selected = 1 : selected = null" class="w-full p-6 text-left focus:outline-none">
+                            <div class="flex items-center justify-between">
+                                <span class="text-lg font-semibold">¿Cómo funciona el servicio?</span>
+                                <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" :class="{'rotate-180': selected === 1}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div x-show="selected === 1" class="px-6 pb-6">
+                            <p class="text-gray-600">Nuestro servicio utiliza un algoritmo avanzado que analiza y compara términos similares, proporcionando explicaciones detalladas sobre sus diferencias específicas, contextos de uso y ejemplos prácticos.</p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg hover:shadow-md transition-shadow duration-300">
+                        <button @click="selected !== 2 ? selected = 2 : selected = null" class="w-full p-6 text-left focus:outline-none">
+                            <div class="flex items-center justify-between">
+                                <span class="text-lg font-semibold">¿Con qué frecuencia se actualiza el contenido?</span>
+                                <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" :class="{'rotate-180': selected === 2}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div x-show="selected === 2" class="px-6 pb-6">
+                            <p class="text-gray-600">Actualizamos nuestra base de datos diariamente con nuevos términos y conceptos. Nuestro equipo de expertos revisa y verifica constantemente la información para mantenerla precisa y relevante.</p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg hover:shadow-md transition-shadow duration-300">
+                        <button @click="selected !== 3 ? selected = 3 : selected = null" class="w-full p-6 text-left focus:outline-none">
+                            <div class="flex items-center justify-between">
+                                <span class="text-lg font-semibold">¿Puedo sugerir nuevos términos para comparar?</span>
+                                <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" :class="{'rotate-180': selected === 3}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div x-show="selected === 3" class="px-6 pb-6">
+                            <p class="text-gray-600">¡Absolutamente! Valoramos las sugerencias de nuestra comunidad. Puede enviar sus propuestas a través del formulario de contacto y nuestro equipo las evaluará para su inclusión.</p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg hover:shadow-md transition-shadow duration-300">
+                        <button @click="selected !== 4 ? selected = 4 : selected = null" class="w-full p-6 text-left focus:outline-none">
+                            <div class="flex items-center justify-between">
+                                <span class="text-lg font-semibold">¿El servicio está disponible en otros idiomas?</span>
+                                <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" :class="{'rotate-180': selected === 4}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div x-show="selected === 4" class="px-6 pb-6">
+                            <p class="text-gray-600">Actualmente ofrecemos el servicio en español, con planes de expansión a inglés y francés en los próximos meses. Suscríbase a nuestro boletín para recibir actualizaciones.</p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg hover:shadow-md transition-shadow duration-300">
+                        <button @click="selected !== 5 ? selected = 5 : selected = null" class="w-full p-6 text-left focus:outline-none">
+                            <div class="flex items-center justify-between">
+                                <span class="text-lg font-semibold">¿Ofrecen recursos adicionales de aprendizaje?</span>
+                                <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" :class="{'rotate-180': selected === 5}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div x-show="selected === 5" class="px-6 pb-6">
+                            <p class="text-gray-600">Sí, además de las comparaciones, proporcionamos guías de estudio, ejercicios prácticos y un blog educativo con artículos profundos sobre diversos temas lingüísticos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-24 bg-blue-600 text-white" style="background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
+            <div class="container mx-auto px-6 text-center relative z-10 bg-blue-600/80 py-16 rounded-xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">¿Listo para mejorar tu comprensión?</h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">Únete a miles de usuarios que ya están aprovechando nuestra plataforma para mejorar su comprensión y comunicación.</p>
                 <a href="https://diferenciasentre.net/" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-                    Explorar Ahora
+                    Comenzar Ahora
                 </a>
             </div>
         </section>
@@ -146,26 +304,39 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div>
                     <h3 class="text-xl font-semibold mb-4">DiferenciasEntre</h3>
-                    <p class="text-gray-400">Claridad en cada comparación.</p>
+                    <p class="text-gray-400">Claridad y precisión en cada comparación.</p>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Enlaces</h4>
+                    <h4 class="text-lg font-semibold mb-4">Enlaces Rápidos</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Inicio</a></li>
                         <li><a href="#caracteristicas" class="hover:text-white transition-colors duration-300">Características</a></li>
                         <li><a href="#beneficios" class="hover:text-white transition-colors duration-300">Beneficios</a></li>
+                        <li><a href="#testimonios" class="hover:text-white transition-colors duration-300">Testimonios</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors duration-300">Sobre Nosotros</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Legal</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Política de Privacidad</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Términos de Uso</a></li>
+                        <li><a href="https://serviciogad2024.github.io/diferencias-entre-conceptos-y-t-rminos-explicadas-de-forma-clara-2025-02-20-i2hxc/privacy.html" class="hover:text-white transition-colors duration-300">Política de Privacidad</a></li>
+                        <li><a href="https://serviciogad2024.github.io/diferencias-entre-conceptos-y-t-rminos-explicadas-de-forma-clara-2025-02-20-i2hxc/terms.html" class="hover:text-white transition-colors duration-300">Términos de Uso</a></li>
+                        <li><a href="https://serviciogad2024.github.io/diferencias-entre-conceptos-y-t-rminos-explicadas-de-forma-clara-2025-02-20-i2hxc/blog.html" class="hover:text-white transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Contacto</h4>
-                    <p class="text-gray-400">contacto@diferenciasentre.net</p>
+                    <p class="text-gray-400 mb-2">Email: contacto@diferenciasentre.net</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-12 pt-8 text-center">
@@ -173,5 +344,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
